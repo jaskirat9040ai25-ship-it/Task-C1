@@ -390,3 +390,146 @@ body {
     background-color: white;
     border-top: 1px solid #ddd;
 }
+.new-post-page {
+  width: 90%;
+  margin: 15px auto;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #111;
+  box-sizing: border-box;
+}
+.top-post-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 38px;
+  margin-right: 2%;
+}
+.top-post-button button,
+.bottom-post-button button {
+  width: 145px;
+  height: 27px;
+  background-color: #a0a0a0;
+  border: 1px solid #999;
+  color: #000;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  cursor: pointer;
+}
+.top-post-button button:hover,
+.bottom-post-button button:hover {
+  background-color: #888;
+}
+.section-heading {
+  background-color: #dedede;
+  padding: 3px 7px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.post-type {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin: 10px 3px 25px;
+}
+.post-type label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.post-type input {
+  margin: 0;
+  accent-color: #555;
+}
+.post-information {
+  margin: 7px 12px 12px;
+  line-height: 1.5;
+  text-indent: 0;
+}
+.post-information span {
+  color: #ff3b24;
+}
+.post-field {
+  margin: 10px 10px;
+}
+.post-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+.post-field input,
+.post-field textarea,
+.tags-field input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  border-radius: 0;
+  padding: 4px 7px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #111;
+}
+.post-field input {
+  height: 24px;
+}
+.post-field textarea {
+  display: block;
+  resize: vertical;
+}
+.abstract-input {
+  height: 52px;
+}
+.content-input {
+  height: 165px;
+}
+.post-field input:focus,
+.post-field textarea:focus,
+.tags-field input:focus {
+  outline: 1px solid #777;
+}
+.tags-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 10px 35px;
+}
+.tags-field label {
+  white-space: nowrap;
+}
+.tags-field input {
+  height: 24px;
+  min-width: 0;
+}
+.bottom-post-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .new-post-page {
+    width: 100%;
+    padding: 8px;
+  }
+  .post-type {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .post-information {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .post-field {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .tags-field {
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: flex-start;
+  }
+  .tags-field input {
+    flex: 1;
+  }
+}
